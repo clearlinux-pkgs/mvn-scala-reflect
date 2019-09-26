@@ -4,7 +4,7 @@
 #
 Name     : mvn-scala-reflect
 Version  : 1
-Release  : 2
+Release  : 3
 URL      : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar
 Source0  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar
 Source1  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar
@@ -14,6 +14,8 @@ Source4  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.1
 Source5  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.pom
 Source6  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar
 Source7  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom
+Source8  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar
+Source9  : https://repo.maven.apache.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -60,6 +62,12 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-re
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.7
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -74,3 +82,5 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/scala-re
 /usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.pom
 /usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar
 /usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom
+/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar
+/usr/share/java/.m2/repository/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom
